@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="noPhoto">
+<head>
+  <meta charset="UTF-8">
+  <title>#NO-FILTER</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script type="text/javascript" src="js/factory.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body ng-controller="NoPhotoController as no">
+  <h1>#NO-PHOTO #NO-FILTER</h1>
+
+  <ul>
+    <li ng-repeat="photo in no.photos">{{ photo.title }}
+    <img src="{{ photo.url }}">
+    </li>
+  </ul>
+
+</body>
+</html>
