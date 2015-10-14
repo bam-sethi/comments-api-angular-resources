@@ -13,8 +13,8 @@
   <h1>#NO-PHOTO #NO-FILTER</h1>
 
   <ul>
-    <li ng-repeat="photo in no.photos">{{ photo.title }}
-    <img src="{{ photo.url }}">
+    <li ng-repeat="photo in no.photos"><a href="{{ photo.url }}">{{ photo.title }}</a>
+    <img src="{{ photo.thumbnailUrl }}">
     </li>
   </ul>
 
